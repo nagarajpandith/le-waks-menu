@@ -71,6 +71,72 @@ const Accordion = () => {
         },
       ]
     },
+    {
+      id: 4,
+      category: "Ramadan Items",
+      dishes: [
+        {
+          dish: "Caesar Salad",
+          image: "https://unsplash.it/100/100",
+          price: "36.00",
+          desc: "Caesar Salad Served with Chicken Shawarma",
+          new: 0,
+          spcl: 0
+        },
+        {
+          dish: "Caesar Salad",
+          image: "https://unsplash.it/100/100",
+          price: "45.00",
+          desc: "Caesar Salad Served with Chicken Shawarma",
+          new: 1,
+          spcl: 0
+        },
+      ]
+    },
+    {
+      id: 5,
+      category: "Drinks",
+      dishes: [
+        {
+          dish: "Caesar Salad",
+          image: "https://unsplash.it/100/100",
+          price: "36.00",
+          desc: "Caesar Salad Served with Chicken Shawarma",
+          new: 0,
+          spcl: 0
+        },
+        {
+          dish: "Caesar Salad",
+          image: "https://unsplash.it/100/100",
+          price: "45.00",
+          desc: "Caesar Salad Served with Chicken Shawarma",
+          new: 1,
+          spcl: 0
+        },
+      ]
+    },
+    {
+      id: 6,
+      category: "Boxes",
+      dishes: [
+        {
+          dish: "Caesar Salad",
+          image: "https://unsplash.it/100/100",
+          price: "36.00",
+          desc: "Caesar Salad Served with Chicken Shawarma",
+          new: 0,
+          spcl: 0
+        },
+        {
+          dish: "Caesar Salad",
+          image: "https://unsplash.it/100/100",
+          price: "45.00",
+          desc: "Caesar Salad Served with Chicken Shawarma",
+          new: 1,
+          spcl: 0
+        },
+      ]
+    },
   ];
 
   return (
