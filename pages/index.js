@@ -4,6 +4,7 @@ import { Listbox, Transition } from '@headlessui/react'
 import { HiOutlineSelector } from 'react-icons/hi'
 import { AiOutlineMessage } from 'react-icons/ai'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const lang = [
   { id: 1, name: 'English' },
@@ -16,13 +17,16 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Fine Dine</title>
-        <meta name="description" content="Fine Dine Menu" />
-        <link rel="icon" href="/icon.avif" />
+        <title>Le Walk's</title>
+        <meta name="description" content="Le Walks Menu | Burgers and More" />
+        <link rel="icon" href="/le-walks-logo.png" />
       </Head>
 
       <div className="w-72 mx-auto my-[10%]">
-      <div className='my-5 text-center text-gray-500'>Welcome to Hatabgy</div>
+      <div className="mx-auto flex flex-col items-center justify-center w-36">
+          <Image src="/le-walks-logo.png" height={400} width={400} />
+      </div>
+      <div className='my-5 text-center text-gray-500'>Welcome to Le Walk's</div>
       <Listbox value={selectedLang} onChange={setSelectedLang}>
         <div className="my-6 relative">
           <Listbox.Button className="relative w-full cursor-default rounded-3xl bg-white py-3 pl-8 pr-10 text-left shadow-lg focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
@@ -46,7 +50,7 @@ export default function Home() {
                   key={languageIdx}
                   className={({ active }) =>
                     `relative cursor-default select-none py-2 pl-10 pr-4 ${
-                      active ? 'bg-amber-100 text-amber-900' : 'text-gray-900'
+                      active ? ' text-yellow-500' : 'text-gray-900'
                     }`
                   }
                   value={language}
@@ -70,16 +74,18 @@ export default function Home() {
       </Listbox>
       <div className='flex justify-center mb-10'>
       <Link href="/menu">
-      <button class="bg-red-600 hover:bg-red-700 text-white font-light py-3 px-14 rounded-full">
+      <button class="bg-yellow-400 hover:bg-yellow-500 text-white font-light py-3 px-14 rounded-full">
       Tap to start
       </button>
       </Link>
       </div>
+      {/* 
       <Link href="/feedback">
       <div className='flex justify-center'>
       <a className='flex flex-row text-red-600 underline cursor-pointer'><AiOutlineMessage className='mt-1 mr-2' />Give Feedback</a>
       </div>
       </Link>
+      */}
     </div>
 
     </div>

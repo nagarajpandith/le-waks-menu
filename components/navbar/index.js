@@ -10,9 +10,10 @@ return (
     <button class="inline-flex items-center px-4 py-4 bg-gray-50 hover:bg-gray-100 text-white text-sm font-medium rounded-md shadow-lg">
     <IoIosArrowBack className="text-gray-900" />
     </button></Link>
+    {/*
     <button class="inline-flex items-center px-4 py-4 bg-gray-50 hover:bg-gray-100 text-white text-sm font-medium rounded-md shadow-lg">
     <GiHamburgerMenu className="text-gray-900" />
-    </button>
+    </button>*/}
     </div>
     </div>
 )
