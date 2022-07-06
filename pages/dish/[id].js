@@ -8,7 +8,6 @@ export default function Details() {
   const fetchDetails = async() => {
     const res = await fetch('/api/dishes')
     const data = await res.json()
-    console.log(data)
     setDetails(data)
   }
 

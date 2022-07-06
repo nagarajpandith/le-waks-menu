@@ -161,7 +161,7 @@ const Accordion = () => {
             dishes={data.dishes}
             Index={Index}
             setIndex={setIndex}
-            key={Index}
+            key={data.id}
           ></AccordionUI>
         );
       })}

@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { HiOutlineSelector } from 'react-icons/hi'
@@ -16,14 +15,8 @@ export default function Home() {
 
   return (
     <div>
-      <Head>
-        <title>Le Walk&apos;s | Burgers and More</title>
-        <meta name="description" content="Le Walks Menu | Burgers and More" />
-        <link rel="icon" href="/le-walks-logo.png" />
-      </Head>
-
       <div className="w-72 mx-auto my-[10%]">
-      <div className="mx-auto flex flex-col items-center justify-center w-36">
+      <div className="mx-auto flex flex-col items-center justify-center w-56">
           <Image src="/le-walks-logo.png" height={1000} width={1000} alt="logo" />
       </div>
       <div className='my-5 text-center text-gray-500'>Welcome to Le Walk&apos;s</div>
