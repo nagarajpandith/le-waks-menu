@@ -17,9 +17,9 @@ export default function Home() {
     <div>
       <div className="w-72 mx-auto my-[10%]">
       <div className="mx-auto flex flex-col items-center justify-center w-56">
-          <Image src="/le-walks-logo.png" height={1000} width={1000} alt="logo" />
+          <Image src="/le-waks-logo.png" height={1000} width={1000} alt="logo" />
       </div>
-      <div className='my-5 text-center text-gray-500'>Welcome to Le Walk&apos;s</div>
+      <div className='my-5 text-center text-gray-500'>Welcome to Le Wak&apos;s</div>
       <Listbox value={selectedLang} onChange={setSelectedLang}>
         <div className="my-6 relative">
           <Listbox.Button className="relative w-full cursor-default rounded-3xl bg-white py-3 pl-8 pr-10 text-left shadow-lg focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">

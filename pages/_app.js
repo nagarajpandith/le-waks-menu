@@ -34,15 +34,16 @@ function MyApp({ Component, pageProps, router }) {
 
   return <>
   {
-  loading?  <div className='flex justify-center items-center my-[20rem] flex-col'>
-    <Image src="/le-walks-logo.png" height={200} width={200} alt="logo" /> 
+  loading?  
+  <div className='flex justify-center items-center my-[50%] md:my-[20%] flex-col'>
+    <Image src="/le-waks-logo.png" height={200} width={200} alt="logo" /> 
     <ThreeDots ariaLabel="loading-indicator" color='yellow' />
-    </div> :
+  </div> :
   <>
   <Head>
-        <title>Le Walk&apos;s | Burgers and More</title>
-        <meta name="description" content="Le Walks Menu | Burgers and More" />
-        <link rel="icon" href="/le-walks-logo.png" />
+        <title>Le Wak&apos;s | Burgers and More</title>
+        <meta name="description" content="Le Waks Menu | Burgers and More" />
+        <link rel="icon" href="/le-waks-logo.png" />
   </Head>
   
   <motion.div 
