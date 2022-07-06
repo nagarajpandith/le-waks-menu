@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { HiOutlineSelector } from 'react-icons/hi'
-import { AiOutlineMessage } from 'react-icons/ai'
+// import { AiOutlineMessage } from 'react-icons/ai'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -17,16 +17,16 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Le Walk's</title>
+        <title>Le Walk&apos;s | Burgers and More</title>
         <meta name="description" content="Le Walks Menu | Burgers and More" />
         <link rel="icon" href="/le-walks-logo.png" />
       </Head>
 
       <div className="w-72 mx-auto my-[10%]">
       <div className="mx-auto flex flex-col items-center justify-center w-36">
-          <Image src="/le-walks-logo.png" height={400} width={400} />
+          <Image src="/le-walks-logo.png" height={1000} width={1000} alt="logo" />
       </div>
-      <div className='my-5 text-center text-gray-500'>Welcome to Le Walk's</div>
+      <div className='my-5 text-center text-gray-500'>Welcome to Le Walk&apos;s</div>
       <Listbox value={selectedLang} onChange={setSelectedLang}>
         <div className="my-6 relative">
           <Listbox.Button className="relative w-full cursor-default rounded-3xl bg-white py-3 pl-8 pr-10 text-left shadow-lg focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
@@ -74,7 +74,7 @@ export default function Home() {
       </Listbox>
       <div className='flex justify-center mb-10'>
       <Link href="/menu">
-      <button class="bg-yellow-400 hover:bg-yellow-500 text-white font-light py-3 px-14 rounded-full">
+      <button className="bg-yellow-400 hover:bg-yellow-500 text-white font-light py-3 px-14 rounded-full">
       Tap to start
       </button>
       </Link>

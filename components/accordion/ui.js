@@ -29,7 +29,7 @@ const AccordionUI = ({ title, dishes, Id, Index, setIndex }) => {
       {Index === Id && (
         dishes.map((dish) => {
         return (
-        <motion.div className="flex flex-row justify-between bg-white shadow-md pl-10  font-semibold text-black w-3/4 h-auto  rounded-md p-4 border-l-2 mb-2 "
+        <motion.div key={dish.dishId} className="flex flex-row justify-between bg-white shadow-md pl-10  font-semibold text-black w-3/4 h-auto  rounded-md p-4 border-l-2 mb-2 "
         whileHover={{
           position: 'relative',
           zIndex: 1,
@@ -40,18 +40,18 @@ const AccordionUI = ({ title, dishes, Id, Index, setIndex }) => {
           }
         }}>
         <div className='inline-flex flex-col gap-y-3'>
-          <Link href={'/dish/' + dish.dishId} >
+          <Link href={`/dish/` + dish.dishId} >
           <a className='text-gray-700'>{dish.dish}</a>
           </Link>
           <a className='text-gray-500 font-light'>{dish.desc}</a>
           <a className='text-yellow-400'>₹{dish.price}</a>
           <div className='inline-flex flex-row'>
-          {dish.new? <div className='mr-2'><Image src="/new-badge.png" width={25} height={25} /></div> : null}
-          {dish.spcl? <div><Image src="/star-badge.png" width={25} height={25} /></div> : null}
+          {dish.new? <div className='mr-2'><Image src="/new-badge.png" width={25} height={25} alt="new" /></div> : null}
+          {dish.spcl? <div><Image src="/star-badge.png" width={25} height={25} alt="star" /></div> : null}
           </div>
         </div>
         <Link href={'/dish/' + dish.dishId} >
-          <Image className="rounded-lg" src={dish.image} width={150} height={150} />
+          <Image className="rounded-lg" src={dish.image} width={150} height={150} alt="dish-image" />
         </Link>
         </motion.div>
         );
