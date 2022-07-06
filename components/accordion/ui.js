@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import Link from 'next/link'
 import { motion } from 'framer-motion';
+import { HiOutlineFire } from "react-icons/hi"
 // import { GiFrenchFries, GiChickenOven, GiCheeseWedge } from "react-icons/gi"
 // import { FaHamburger } from "react-icons/fa"
 // import { BiDrink } from "react-icons/bi"
@@ -58,6 +59,10 @@ const AccordionUI = ({ title, dishes, Id, Index, setIndex }) => {
           </Link>
           {/* <a className='text-gray-500 font-light'>{dish.desc}</a> */}
           <a className='text-yellow-400'>{dish.price} SAR</a>
+          <div className='inline-flex flex-row'>
+          <a className='text-gray-400 font-light text-sm'>{dish.cal} Calories</a>
+          <HiOutlineFire className="text-gray-500 w-7 h-5" />
+          </div>
           {/* <div className='inline-flex flex-row'>
           {dish.new? <div className='mr-2'><Image src="/new-badge.png" width={25} height={25} alt="new" /></div> : null}
           {dish.spcl? <div><Image src="/star-badge.png" width={25} height={25} alt="star" /></div> : null}

@@ -35,7 +35,7 @@ export default function Details() {
     </div>
     <div className="flex justify-center items-center flex-col gap-y-3">
     <div className="text-yellow-400 font-bold text-2xl">
-      Title
+      Details Page in Progress...
     </div>
       <a className="text-gray-900 text-lg">Price</a>
     <div className="inline-flex flex-row">
