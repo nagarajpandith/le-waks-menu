@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import AccordionUI from "./ui";
 
 const Accordion = () => {
-  const [Index, setIndex] = useState(false);
   const [details, setDetails] = useState([])
   
   const fetchDetails = async() => {
@@ -23,8 +22,6 @@ const Accordion = () => {
             title={data.category}
             Id={data.id}
             dishes={data.dishes}
-            Index={Index}
-            setIndex={setIndex}
             key={data.id}
           ></AccordionUI>
         );

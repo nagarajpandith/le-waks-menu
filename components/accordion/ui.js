@@ -1,19 +1,19 @@
 import Image from 'next/image'
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import Link from 'next/link'
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { HiOutlineFire } from "react-icons/hi"
+import { useState } from 'react';
 // import { GiFrenchFries, GiChickenOven, GiCheeseWedge } from "react-icons/gi"
 // import { FaHamburger } from "react-icons/fa"
 // import { BiDrink } from "react-icons/bi"
 
 const AccordionUI = ({ title, dishes, Id, Index, setIndex }) => {
-  const handleSetIndex = (Id) => Index !== Id && setIndex(Id);
-
+  const [ show, setShow ] = useState(false)
   return (
     <>
       <div
-        onClick={() => handleSetIndex(Id)}
+        onClick={() => setShow(!show)}
         className="mb-5 flex group cursor-pointer w-3/4 mx-auto h-16 justify-between  items-center p-2 mt-2 rounded-md bg-white hover:shadow-xl shadow-lg"
       >
         <div className="flex group cursor-pointer">
@@ -22,7 +22,7 @@ const AccordionUI = ({ title, dishes, Id, Index, setIndex }) => {
           </div>
         </div>
         <div className="flex items-center justify-center pr-10">
-          {Index !== Id ? (
+          {!show?(
             <BsChevronDown className="w-6 h-6 text-black" />
           ) : (
             <BsChevronUp className="w-6 h-6 text-black" />
@@ -30,20 +30,14 @@ const AccordionUI = ({ title, dishes, Id, Index, setIndex }) => {
         </div>
       </div>
 
-      {Index === Id && (
-        dishes.map((dish) => {
+      { show &&
+      dishes.map((dish) => {
         return (
-        <motion.div key={dish.dishId} className="flex flex-row justify-between bg-white shadow-md pl-10  font-semibold text-black w-3/4 h-auto  rounded-md p-4 border-l-2 mb-2 "
-        initial="pageInitial" 
-        animate="pageAnimate" 
-        variants={{
-        pageInitial: {
-          opacity: 0
-        },
-        pageAnimate: {
-          opacity: 1
-        },
-        }}
+        <AnimatePresence>
+        <motion.div key={dish.dishId} className="flex flex-row justify-between bg-white shadow-md pl-10 font-semibold text-black w-3/4 h-auto rounded-md p-4 border-l-2 mb-3"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0 }}
         whileHover={{
           position: 'relative',
           zIndex: 1,
@@ -72,9 +66,10 @@ const AccordionUI = ({ title, dishes, Id, Index, setIndex }) => {
           <Image className="rounded-lg" src={dish.image} width={150} height={150} alt="dish-image" />
         </Link>
         </motion.div>
+        </AnimatePresence>
         );
         })
-        )}
+        }
     </>
   );
 };
