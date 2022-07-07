@@ -2,11 +2,11 @@ import { useState, useEffect } from "react"
 import { useRouter } from 'next/router'
 import Image from "next/image"
 import { HiOutlineFire } from "react-icons/hi"
+import { motion } from "framer-motion"
 
 export default function Details() {
   const router = useRouter()
   const query = router.query.id
-  
   const [details, setDetails] = useState([])
   const fetchDetails = async() => {
     const res = await fetch('/api/dishes')
@@ -20,33 +20,43 @@ export default function Details() {
 
   return (
   <>
-  {/* {
+  {
     details.map(detail=>{
-      return<>
-        <div key={detail.id}>
-          {detail.dishes[0].image}
-        </div>
-      </>
-    })
-  } */}
-  <div>
-    <div className="flex justify-center items-center m-10">
-    <Image className="rounded-xl" src="https://unsplash.it/400/400" width={400} height={400} alt="food image" />
-    </div>
-    <div className="flex justify-center items-center flex-col gap-y-3">
-    <div className="text-yellow-400 font-bold text-lg md:text-2xl">
-      Details Page in Progress...
-    </div>
-      <a className="text-gray-900 text-md lg:text-lg dark:text-white">Price</a>
-    <div className="inline-flex flex-row">
-      <HiOutlineFire className="text-gray-500 w-7 h-5 dark:text-white" />
-      <a className="text-gray-500 font-light dark:text-white">Calories</a>
-    </div>
-    {/* <div>
-      <a className="text-gray-400">Description</a>
-    </div> */}
-    </div>
-  </div>
+      return(
+      detail.dishes.map(data=>{
+        if (query === data.dishId)
+        return<>
+          <div key={data.dishId}>
+            <motion.div 
+            whileHover={{
+              position: 'relative',
+              zIndex: 1,
+              scale: 1.03,
+              transition: {
+                duration: .2
+              }
+            }}
+            className="flex justify-center items-center m-10">
+            <Image className="rounded-xl" src={data.image} width={400} height={400} alt="food image" />
+            </motion.div>
+            <div className="flex justify-center items-center flex-col gap-y-3">
+            <div className="text-yellow-400 font-bold text-lg md:text-2xl mx-5 text-center">
+              {data.dish}
+            </div>
+              <a className="text-gray-900 text-md lg:text-lg dark:text-white">{data.price} SAR</a>
+            <div className="inline-flex flex-row">
+              <HiOutlineFire className="text-gray-500 w-7 h-5 dark:text-white" />
+              <a className="text-gray-500 font-light dark:text-white">{data.cal} Calories</a>
+            </div>
+            {/* <div>
+              <a className="text-gray-400">Description</a>
+            </div> */}
+            </div>
+          </div>
+        </>
+      })
+    )})
+  } 
   </>
   )
 }

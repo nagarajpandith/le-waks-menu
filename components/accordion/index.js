@@ -15,7 +15,7 @@ const Accordion = () => {
   }, [])
 
   return (
-    <div className="flex flex-col justify-center items-center sm:mx-5 md:mx-60 p-10 rounded-xl h-auto py-20">
+    <div className="flex flex-col justify-center items-center sm:mx-5 md:mx-60 p-10 rounded-xl h-auto py-10">
       {details.map((data) => {
         return (
           <AccordionUI

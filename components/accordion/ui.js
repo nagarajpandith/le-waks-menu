@@ -8,7 +8,7 @@ import { useState } from 'react';
 // import { FaHamburger } from "react-icons/fa"
 // import { BiDrink } from "react-icons/bi"
 
-const AccordionUI = ({ title, dishes, Id, Index, setIndex }) => {
+const AccordionUI = ({ title, dishes }) => {
   const [ show, setShow ] = useState(false)
   return (
     <>
@@ -34,7 +34,7 @@ const AccordionUI = ({ title, dishes, Id, Index, setIndex }) => {
       dishes.map((dish) => {
         return (
         <AnimatePresence key={dish.dishId}>
-        <motion.div key={dish.dishId} className="flex flex-row justify-between bg-white pl-10 font-semibold text-black w-full md:w-3/4 h-auto rounded-md p-4 shadow-md mb-3 dark:bg-gray-500"
+        <motion.div key={dish.dishId} className="flex flex-row justify-between items-center bg-white md:pl-10 font-semibold text-black w-full md:w-3/4 h-auto rounded-md p-4 shadow-md mb-3 dark:bg-gray-500"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0 }}
