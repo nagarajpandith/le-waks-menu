@@ -6,7 +6,7 @@ export default function Menu() {
     <div>
       <div className="inline-flex flex-col justify-center items-center mx-[50%]">
           <a className="text-yellow-400 text-2xl mb-2 truncate">Le Wak&apos;s</a>
-          <a className="text-md text-gray-500">Menu</a>
+          <a className="text-md text-gray-500 dark:text-white">Menu</a>
       </div>
 
       <div className="mx-12 flex flex-col items-center justify-center border-b-2 w-36 border-yellow-400">

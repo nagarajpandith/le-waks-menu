@@ -14,10 +14,10 @@ const AccordionUI = ({ title, dishes, Id, Index, setIndex }) => {
     <>
       <div
         onClick={() => setShow(!show)}
-        className="mb-5 flex group cursor-pointer w-3/4 mx-auto h-16 justify-between  items-center p-2 mt-2 rounded-md bg-white hover:shadow-xl shadow-lg"
+        className="mb-5 flex group cursor-pointer w-3/4 mx-auto h-16 justify-between  items-center p-2 mt-2 rounded-md bg-white hover:shadow-xl shadow-lg dark:bg-gray-600"
       >
         <div className="flex group cursor-pointer">
-          <div className="text-black font-semibold pl-10">
+          <div className="text-black font-semibold pl-10 dark:text-white">
             {title}
           </div>
         </div>
@@ -33,29 +33,28 @@ const AccordionUI = ({ title, dishes, Id, Index, setIndex }) => {
       { show &&
       dishes.map((dish) => {
         return (
-        <AnimatePresence>
-        <motion.div key={dish.dishId} className="flex flex-row justify-between bg-white shadow-md pl-10 font-semibold text-black w-3/4 h-auto rounded-md p-4 border-l-2 mb-3"
+        <AnimatePresence key={dish.dishId}>
+        <motion.div key={dish.dishId} className="flex flex-row justify-between bg-white pl-10 font-semibold text-black w-3/4 h-auto rounded-md p-4 shadow-md mb-3 dark:bg-gray-500"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0 }}
         whileHover={{
           position: 'relative',
           zIndex: 1,
-          background: 'white',
           scale: 1.02,
           transition: {
             duration: .2
           }
         }}>
-        <div className='inline-flex flex-col gap-y-3'>
+        <div className='inline-flex flex-col gap-y-3 '>
           <Link href={`/dish/` + dish.dishId} >
-          <a className='text-gray-700'>{dish.dish}</a>
+          <a className='text-gray-700 dark:text-white'>{dish.dish}</a>
           </Link>
           {/* <a className='text-gray-500 font-light'>{dish.desc}</a> */}
-          <a className='text-yellow-400'>{dish.price} SAR</a>
+          <a className='text-yellow-400 dark:text-yellow-300'>{dish.price} SAR</a>
           <div className='inline-flex flex-row'>
-          <a className='text-gray-400 font-light text-sm'>{dish.cal} Calories</a>
-          <HiOutlineFire className="text-gray-500 w-7 h-5" />
+          <a className='text-gray-400 font-light text-sm dark:text-white'>{dish.cal} Calories</a>
+          <HiOutlineFire className="text-gray-500 w-7 h-5 dark:text-white" />
           </div>
           {/* <div className='inline-flex flex-row'>
           {dish.new? <div className='mr-2'><Image src="/new-badge.png" width={25} height={25} alt="new" /></div> : null}

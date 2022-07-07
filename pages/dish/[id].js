@@ -37,10 +37,10 @@ export default function Details() {
     <div className="text-yellow-400 font-bold text-2xl">
       Details Page in Progress...
     </div>
-      <a className="text-gray-900 text-lg">Price</a>
+      <a className="text-gray-900 text-lg dark:text-white">Price</a>
     <div className="inline-flex flex-row">
-      <HiOutlineFire className="text-gray-500 w-7 h-5" />
-      <a className="text-gray-500">Calories</a>
+      <HiOutlineFire className="text-gray-500 w-7 h-5 dark:text-white" />
+      <a className="text-gray-500 dark:text-white">Calories</a>
     </div>
     {/* <div>
       <a className="text-gray-400">Description</a>

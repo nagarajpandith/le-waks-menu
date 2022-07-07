@@ -6,8 +6,12 @@ import { ThreeDots } from 'react-loader-spinner'
 import Router from 'next/router'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+// import { useRouter } from "next/router";
+import { ThemeProvider } from "next-themes"
 
 function MyApp({ Component, pageProps, router }) {
+  // const route = useRouter();
+  // const showHeader = route.pathname === "/" ? false : true;
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -45,7 +49,8 @@ function MyApp({ Component, pageProps, router }) {
         <meta name="description" content="Le Waks Menu | Burgers and More" />
         <link rel="icon" href="/le-waks-logo.png" />
   </Head>
-  
+
+  <ThemeProvider enableSystem={true} attribute="class" >
   <motion.div 
   key={router.route}
   initial="pageInitial" 
@@ -58,9 +63,12 @@ function MyApp({ Component, pageProps, router }) {
     opacity: 1
   },
   }}>
+  {/* {showHeader && 
+  <Navbar />} */}
   <Navbar />
   <Component {...pageProps} />
   </motion.div>
+  </ThemeProvider>
   </>
   }
   </>
