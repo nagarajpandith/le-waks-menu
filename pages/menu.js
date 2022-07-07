@@ -4,7 +4,7 @@ import Accordion from "../components/accordion";
 export default function Menu() {
   return (
     <div>
-      <div className="inline-flex flex-col justify-center items-center mx-[50%]">
+      <div className="flex flex-col justify-center items-center mx-[50%]">
           <a className="text-yellow-400 text-2xl mb-2 truncate">Le Wak&apos;s</a>
           <a className="text-md text-gray-500 dark:text-white">Menu</a>
       </div>

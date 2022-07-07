@@ -30,17 +30,17 @@ export default function Details() {
     })
   } */}
   <div>
-    <div className="flex justify-center items-center mb-5">
+    <div className="flex justify-center items-center m-10">
     <Image className="rounded-xl" src="https://unsplash.it/400/400" width={400} height={400} alt="food image" />
     </div>
     <div className="flex justify-center items-center flex-col gap-y-3">
-    <div className="text-yellow-400 font-bold text-2xl">
+    <div className="text-yellow-400 font-bold text-lg md:text-2xl">
       Details Page in Progress...
     </div>
-      <a className="text-gray-900 text-lg dark:text-white">Price</a>
+      <a className="text-gray-900 text-md lg:text-lg dark:text-white">Price</a>
     <div className="inline-flex flex-row">
       <HiOutlineFire className="text-gray-500 w-7 h-5 dark:text-white" />
-      <a className="text-gray-500 dark:text-white">Calories</a>
+      <a className="text-gray-500 font-light dark:text-white">Calories</a>
     </div>
     {/* <div>
       <a className="text-gray-400">Description</a>
