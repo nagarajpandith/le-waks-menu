@@ -6,8 +6,9 @@
 Menu web app built for Le Wak's | Burgers & More
 
 ### Tech Stack
-1. Nextjs
+1. Next js
 2. Tailwind-CSS
+3. Framer Motion
 
 ### Installation steps
 1. - Fork the [repo](https://github.com/nagarajpandith/le-waks-menu)
@@ -40,3 +41,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
     "react-loader-spinner": "^5.1.5"
     
 ### Screenshots
+- Home Page
+
+![ss01](https://res.cloudinary.com/dpfpk49oa/image/upload/v1657203553/Screenshot_2022-07-07_at_7.45.50_PM_crwkqc.png)
+
+- Menu
+
+![ss02](https://res.cloudinary.com/dpfpk49oa/image/upload/v1657203554/Screenshot_2022-07-07_at_7.46.14_PM_by0ypq.png)
+
+- Light mode support
+
+![ss03](https://res.cloudinary.com/dpfpk49oa/image/upload/v1657203554/Screenshot_2022-07-07_at_7.46.25_PM_zh1zi6.png)
+
+- Arabic version support
+
+![ss04](https://res.cloudinary.com/dpfpk49oa/image/upload/v1657203554/Screenshot_2022-07-07_at_7.47.05_PM_wsrdka.png)

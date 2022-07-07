@@ -4,12 +4,15 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiOutlineFire } from "react-icons/hi"
 import { useState } from 'react';
+import { useRouter } from "next/router"
 // import { GiFrenchFries, GiChickenOven, GiCheeseWedge } from "react-icons/gi"
 // import { FaHamburger } from "react-icons/fa"
 // import { BiDrink } from "react-icons/bi"
 
-const AccordionUI = ({ title, dishes }) => {
+const AccordionUI = ({ title, dishes, ar }) => {
   const [ show, setShow ] = useState(false)
+  const router = useRouter()
+  const { locale } = router;
   return (
     <>
       <div
@@ -18,7 +21,7 @@ const AccordionUI = ({ title, dishes }) => {
       >
         <div className="flex group cursor-pointer">
           <div className="text-black font-semibold pl-10 dark:text-white text-sm md:text-xl">
-            {title}
+          {locale === "en"? title :ar}
           </div>
         </div>
         <div className="flex items-center justify-center pr-10">
@@ -48,7 +51,12 @@ const AccordionUI = ({ title, dishes }) => {
         }}>
         <div className='inline-flex flex-col gap-y-3 '>
           <Link href={`/dish/` + dish.dishId} >
-          <a className='text-gray-700 dark:text-white text-sm md:text-lg'>{dish.dish}</a>
+          <a className='text-gray-700 dark:text-white text-sm md:text-lg'>
+            {locale === "en"?
+            dish.dish
+            :
+            dish.ar}
+          </a>
           </Link>
           {/* <a className='text-gray-500 font-light'>{dish.desc}</a> */}
           <a className='text-yellow-400 dark:text-yellow-300 text-sm md:text-lg'>{dish.price} SAR</a>

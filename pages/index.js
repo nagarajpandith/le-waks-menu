@@ -2,8 +2,8 @@ import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { HiOutlineSelector } from 'react-icons/hi'
 // import { AiOutlineMessage } from 'react-icons/ai'
-import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from "next/router"
 
 const lang = [
   { id: 1, name: 'English' },
@@ -12,7 +12,14 @@ const lang = [
 
 export default function Home() {
   const [selectedLang, setSelectedLang] = useState(lang[0])
-
+  const router = useRouter()
+  const pushRoute = (e) => {
+    e.preventDefault()
+    if (selectedLang.id == "1")
+      router.push("/menu")
+    else
+      router.push("/ar/menu")
+  }
   return (
     <div>
       <div className="w-72 mx-auto my-[10%]">
@@ -66,11 +73,9 @@ export default function Home() {
         </div>
       </Listbox>
       <div className='flex justify-center mb-10'>
-      <Link href="/menu">
-      <button className="bg-yellow-400 hover:bg-yellow-500 text-white font-light py-3 px-14 rounded-full">
+      <button onClick={pushRoute} className="bg-yellow-400 hover:bg-yellow-500 text-white font-light py-3 px-14 rounded-full">
       Tap to start
       </button>
-      </Link>
       </div>
       {/* 
       <Link href="/feedback">

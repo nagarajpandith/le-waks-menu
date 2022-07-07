@@ -2,11 +2,12 @@ export const dishes = [
     {
       id: 1,
       category: "Appetizers",
+      ar: "لعربية",
       dishes: [
         {
           dishId: "app01",
           dish: "Le Waks Lava Shrimps (8pcs)",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "38",
           // desc: "description",
@@ -17,7 +18,7 @@ export const dishes = [
         {
           dishId: "app02",
           dish: "Le Waks Chicken Wing (5pcs)",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "25",
           // desc: "description",
@@ -28,7 +29,7 @@ export const dishes = [
         {
           dishId: "app03",
           dish: "Le Waks Popcorn Chicken W/Dynamite Sauce",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "22",
           // desc: "description",
@@ -39,7 +40,7 @@ export const dishes = [
         {
           dishId: "app04",
           dish: "Le Waks Popcorn Shrimp W/Sweet Spicy Mayo",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "30",
           // desc: "description",
@@ -50,7 +51,7 @@ export const dishes = [
         {
           dishId: "app05",
           dish: "Le Waks French Fries",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "12",
           // desc: "description",
@@ -61,7 +62,7 @@ export const dishes = [
         {
           dishId: "app06",
           dish: "Le Waks Signature Fries",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "21",
           // desc: "description",
@@ -74,11 +75,12 @@ export const dishes = [
     {
       id: 2,
       category: "Burgers",
+      ar: "لعربية",
       dishes: [
         {
           dishId: "burg01",
           dish: "Le Waks Beef Burger",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "28",
           // desc: "description",
@@ -89,7 +91,7 @@ export const dishes = [
         {
           dishId: "burg02",
           dish: "Le Waks Mushroom Beef Burger",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "30",
           // desc: "description",
@@ -100,7 +102,7 @@ export const dishes = [
         {
           dishId: "burg03",
           dish: "Le Waks Philadelphia Beef Burger",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "32",
           // desc: "description",
@@ -111,7 +113,7 @@ export const dishes = [
         {
           dishId: "burg04",
           dish: "Le Waks Chicken Burger (Grilled)",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "27",
           // desc: "description",
@@ -122,7 +124,7 @@ export const dishes = [
         {
           dishId: "burg05",
           dish: "Le Waks Spicy Chicken Burger (Zinger)",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "29",
           // desc: "description",
@@ -133,7 +135,7 @@ export const dishes = [
         {
           dishId: "burg06",
           dish: "Le Waks Beef Slider (2pcs)",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "25",
           // desc: "description",
@@ -144,7 +146,7 @@ export const dishes = [
         {
           dishId: "burg07",
           dish: "Le Waks Chicken Slider (2pcs) W/Fries",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "23",
           // desc: "description",
@@ -157,11 +159,12 @@ export const dishes = [
     {
       id: 3,
       category: "Fried",
+      ar: "لعربية",
       dishes: [
         {
           dishId: "fried01",
           dish: "Chicken Broasted Normal or Spicy W/Fries",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "22",
           // desc: "description",
@@ -173,7 +176,7 @@ export const dishes = [
           dishId: "fried02",
           dish: "Fish and Chips",
           image: "https://unsplash.it/100/100",
-          ar: "",
+          ar: "لعربية",
           price: "32",
           // desc: "description",
           // new: 1,
@@ -185,12 +188,13 @@ export const dishes = [
     {
       id: 4,
       category: "Add Ons",
+      ar: "لعربية",
       dishes: [
         {
           dishId: "add01",
           dish: "Jalapeno",
           image: "https://unsplash.it/100/100",
-          ar: "",
+          ar: "لعربية",
           price: "1",
           // desc: "description",
           // new: 0,
@@ -201,7 +205,7 @@ export const dishes = [
           dishId: "add02",
           dish: "Cheese",
           image: "https://unsplash.it/100/100",
-          ar: "",
+          ar: "لعربية",
           price: "3",
           // desc: "description",
           // new: 1,
@@ -212,7 +216,7 @@ export const dishes = [
           dishId: "add03",
           dish: "Beef Patty (Single)",
           image: "https://unsplash.it/100/100",
-          ar: "",
+          ar: "لعربية",
           price: "8",
           // desc: "description",
           // new: 1,
@@ -223,7 +227,7 @@ export const dishes = [
           dishId: "add04",
           dish: "Special Sauce",
           image: "https://unsplash.it/100/100",
-          ar: "",
+          ar: "لعربية",
           price: "5",
           // desc: "description",
           // new: 1,
@@ -234,7 +238,7 @@ export const dishes = [
           dishId: "add05",
           dish: "Caramelized Onion",
           image: "https://unsplash.it/100/100",
-          ar: "",
+          ar: "لعربية",
           price: "3",
           // desc: "description",
           // new: 1,
@@ -246,11 +250,12 @@ export const dishes = [
     {
       id: 5,
       category: "Drinks",
+      ar: "لعربية",
       dishes: [
         {
           dishId: "drink01",
           dish: "Blue Mojito",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "16",
           // desc: "description",
@@ -261,7 +266,7 @@ export const dishes = [
         {
           dishId: "drink02",
           dish: "Strawberry Mojito",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "16",
           // desc: "description",
@@ -272,7 +277,7 @@ export const dishes = [
         {
           dishId: "drink03",
           dish: "Passion fruit Mojito",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "16",
           // desc: "description",
@@ -283,7 +288,7 @@ export const dishes = [
         {
           dishId: "drink04",
           dish: "Fresh Orange Juice",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "10",
           // desc: "description",
@@ -294,7 +299,7 @@ export const dishes = [
         {
           dishId: "drink05",
           dish: "Peach Ice Tea",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "15",
           // desc: "description",
@@ -305,7 +310,7 @@ export const dishes = [
         {
           dishId: "drink06",
           dish: "Soft Drinks",
-          ar: "",
+          ar: "لعربية",
           image: "https://unsplash.it/100/100",
           price: "8",
           // desc: "description",

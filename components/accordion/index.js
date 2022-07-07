@@ -23,6 +23,7 @@ const Accordion = () => {
             Id={data.id}
             dishes={data.dishes}
             key={data.id}
+            ar={data.ar}
           ></AccordionUI>
         );
       })}

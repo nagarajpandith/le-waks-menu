@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 
 export default function Details() {
   const router = useRouter()
+  const { locale } = router
   const query = router.query.id
   const [details, setDetails] = useState([])
   const fetchDetails = async() => {
@@ -41,7 +42,7 @@ export default function Details() {
             </motion.div>
             <div className="flex justify-center items-center flex-col gap-y-3">
             <div className="text-yellow-400 font-bold text-lg md:text-2xl mx-5 text-center">
-              {data.dish}
+              {locale === "en"? data.dish : data.ar}
             </div>
               <a className="text-gray-900 text-md lg:text-lg dark:text-white">{data.price} SAR</a>
             <div className="inline-flex flex-row">
