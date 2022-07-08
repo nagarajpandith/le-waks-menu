@@ -24,6 +24,7 @@ const Accordion = () => {
             dishes={data.dishes}
             key={data.id}
             ar={data.ar}
+            icon={data.icon}
           ></AccordionUI>
         );
       })}

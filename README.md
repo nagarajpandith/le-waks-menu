@@ -10,6 +10,13 @@ Menu web app built for Le Wak's | Burgers & More
 2. Tailwind-CSS
 3. Framer Motion
 
+### Features
+- Responsive & modern UI
+- Dynamic data with internal API
+- Dual language support (i18n)
+- Dark + Light mode support
+- Seamless preloaders & minimalistic animations
+
 ### Installation steps
 1. - Fork the [repo](https://github.com/nagarajpandith/le-waks-menu)
    - Clone the repo to your local system
@@ -56,3 +63,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Arabic version support
 
 ![ss04](https://res.cloudinary.com/dpfpk49oa/image/upload/v1657203554/Screenshot_2022-07-07_at_7.47.05_PM_wsrdka.png)
+
+- Preloader Animations
+
+![sr01](https://res.cloudinary.com/dpfpk49oa/image/upload/v1657206074/Screen_Recording_2022-07-07_at_8.30.06_PM_apadpy.gif)

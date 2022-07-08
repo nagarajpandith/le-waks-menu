@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { HiOutlineFire } from "react-icons/hi"
 import { useState } from 'react';
 import { useRouter } from "next/router"
-// import { GiFrenchFries, GiChickenOven, GiCheeseWedge } from "react-icons/gi"
-// import { FaHamburger } from "react-icons/fa"
-// import { BiDrink } from "react-icons/bi"
+import { GiFrenchFries, GiChickenOven, GiSaucepan } from "react-icons/gi"
+import { FaHamburger } from "react-icons/fa"
+import { BiDrink } from "react-icons/bi"
 
-const AccordionUI = ({ title, dishes, ar }) => {
+const AccordionUI = ({ title, dishes, ar, icon, Id }) => {
   const [ show, setShow ] = useState(false)
   const router = useRouter()
   const { locale } = router;
@@ -17,10 +17,13 @@ const AccordionUI = ({ title, dishes, ar }) => {
     <>
       <div
         onClick={() => setShow(!show)}
-        className="mb-5 flex group cursor-pointer w-full md:w-3/4 mx-auto h-12 md:h-16 justify-between  items-center p-2 mt-2 rounded-md bg-white hover:shadow-xl shadow-lg dark:bg-gray-600"
+        className="mb-5 flex group cursor-pointer w-full md:w-3/4 mx-auto h-12 md:h-16 justify-between  items-center p-2 mt-2 rounded-md bg-white shadow-lg dark:bg-gray-600 hover:shadow-yellow-300 transition-shadow ease-in-out delay-100 dark:shadow-none"
       >
         <div className="flex group cursor-pointer">
-          <div className="text-black font-semibold pl-10 dark:text-white text-sm md:text-xl">
+          <div className='h-7 w-7 ml-2 md:ml-5 text-2xl md:text-3xl text-black dark:text-yellow-300'>
+          {Id == "1"? <GiFrenchFries /> : Id == "2"? <FaHamburger /> : Id == "3"? <GiChickenOven /> : Id == "4" ? <GiSaucepan /> : <BiDrink />}
+          </div>
+          <div className="text-black font-semibold pl-5 md:pl-10 dark:text-white text-sm md:text-xl">
           {locale === "en"? title :ar}
           </div>
         </div>

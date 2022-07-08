@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import Image from "next/image"
 import { HiOutlineFire } from "react-icons/hi"
 import { motion } from "framer-motion"
+import { TailSpin } from "react-loader-spinner"
 
 export default function Details() {
   const router = useRouter()
@@ -19,9 +20,23 @@ export default function Details() {
       fetchDetails()
   }, [])
 
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
   return (
   <>
-  {
+  {loading? 
+      <div className="flex justify-center items-center my-[10%]">
+      <TailSpin 
+        color="yellow"
+        height={50}
+        width={50}
+      /></div> :      
     details.map(detail=>{
       return(
       detail.dishes.map(data=>{

@@ -3,6 +3,7 @@ export const dishes = [
       id: 1,
       category: "Appetizers",
       ar: "لعربية",
+      icon:"GiFrenchFries",
       dishes: [
         {
           dishId: "app01",
@@ -76,6 +77,7 @@ export const dishes = [
       id: 2,
       category: "Burgers",
       ar: "لعربية",
+      icon:"FaHamburger",
       dishes: [
         {
           dishId: "burg01",
@@ -160,6 +162,7 @@ export const dishes = [
       id: 3,
       category: "Fried",
       ar: "لعربية",
+      icon:"GiChickenOven",
       dishes: [
         {
           dishId: "fried01",
@@ -189,6 +192,7 @@ export const dishes = [
       id: 4,
       category: "Add Ons",
       ar: "لعربية",
+      icon:"GiSaucepan",
       dishes: [
         {
           dishId: "add01",
@@ -251,6 +255,7 @@ export const dishes = [
       id: 5,
       category: "Drinks",
       ar: "لعربية",
+      icon:"BiDrink",
       dishes: [
         {
           dishId: "drink01",
