@@ -37,6 +37,11 @@ function MyApp({ Component, pageProps, router }) {
   };
 
   return <>
+  <Head>
+        <title>Le Wak&apos;s | Burgers and More</title>
+        <meta name="description" content="Le Waks Menu | Burgers and More" />
+        <link rel="icon" href="/le-waks-logo.png" />
+  </Head>
   {
   loading?  
   <div className='flex justify-center items-center my-[50%] md:my-[20%] flex-col'>
@@ -44,11 +49,6 @@ function MyApp({ Component, pageProps, router }) {
     <ThreeDots ariaLabel="loading-indicator" color='yellow' />
   </div> :
   <>
-  <Head>
-        <title>Le Wak&apos;s | Burgers and More</title>
-        <meta name="description" content="Le Waks Menu | Burgers and More" />
-        <link rel="icon" href="/le-waks-logo.png" />
-  </Head>
 
   <ThemeProvider enableSystem={true} attribute="class" >
   <motion.div 
