@@ -53,7 +53,7 @@ export const dishes = [
           dishId: "app05",
           dish: "Le Waks French Fries",
           ar: "لعربية",
-          image: "/images/French_Fries.JPEG",
+          image: "/images/French_Fries.jpeg",
           price: "12",
           // desc: "description",
           // new: 0,
@@ -230,7 +230,7 @@ export const dishes = [
         {
           dishId: "add03",
           dish: "Beef Patty (Single)",
-          image: "/images/Beef_Patty.JPG",
+          image: "/images/Beef_Patty.jpg",
           ar: "لعربية",
           price: "8",
           // desc: "description",
