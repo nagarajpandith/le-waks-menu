@@ -208,7 +208,7 @@ export const dishes = [
         {
           dishId: "add01",
           dish: "Jalapeno",
-          image: "/images/Jalapeno.webp",
+          image: "/images/Jalapeno.jpeg",
           ar: "لعربية",
           price: "1",
           // desc: "description",
@@ -219,7 +219,7 @@ export const dishes = [
         {
           dishId: "add02",
           dish: "Cheese",
-          image: "/images/Cheese.webp",
+          image: "/images/Cheese.jpg",
           ar: "لعربية",
           price: "3",
           // desc: "description",
