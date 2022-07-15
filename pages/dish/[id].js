@@ -4,6 +4,7 @@ import Image from "next/image"
 import { HiOutlineFire } from "react-icons/hi"
 import { motion } from "framer-motion"
 import { TailSpin } from "react-loader-spinner"
+import Footer from "../../components/footer"
 
 export default function Details() {
   const router = useRouter()
@@ -22,7 +23,7 @@ export default function Details() {
 
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1500);
+    const timer = setTimeout(() => setLoading(false), 2000);
     return () => {
       clearTimeout(timer);
     };
@@ -60,7 +61,7 @@ export default function Details() {
               {locale === "en"? data.dish : data.ar}
             </div>
               <a className="text-gray-900 text-md lg:text-lg dark:text-white">{data.price} SAR</a>
-            <div className="inline-flex flex-row">
+            <div className="inline-flex flex-row mb-10">
               <HiOutlineFire className="text-gray-500 w-7 h-5 dark:text-white" />
               <a className="text-gray-500 font-light dark:text-white">{data.cal} Calories</a>
             </div>
@@ -69,6 +70,7 @@ export default function Details() {
             </div> */}
             </div>
           </div>
+          <Footer />
         </>
       })
     )})

@@ -52,7 +52,7 @@ const AccordionUI = ({ title, dishes, ar, icon, Id }) => {
             duration: .2
           }
         }}>
-        <div className='inline-flex flex-col gap-y-3 '>
+        <div className='inline-flex flex-col gap-y-3 w-1/2'>
           <Link href={`/dish/` + dish.dishId} >
           <a className='text-gray-700 dark:text-white text-sm md:text-lg'>
             {locale === "en"?
@@ -73,7 +73,7 @@ const AccordionUI = ({ title, dishes, ar, icon, Id }) => {
           </div> */}
         </div>
         <Link href={'/dish/' + dish.dishId} >
-          <Image className="rounded-lg" src={dish.image} width={150} height={150} alt="dish-image" />
+          <Image className="rounded-lg md:w-1/2" src={dish.image} width={150} height={150} alt="dish-image" />
         </Link>
         </motion.div>
         </AnimatePresence>

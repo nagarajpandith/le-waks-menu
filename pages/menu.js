@@ -3,6 +3,7 @@ import Accordion from "../components/accordion";
 import { TailSpin } from "react-loader-spinner"
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import Footer from '../components/footer';
 
 export default function Menu() {
   const router = useRouter()
@@ -36,8 +37,12 @@ export default function Menu() {
         color="yellow"
         height={50}
         width={50}
-      /></div> :      
-      <Accordion />}
+      /></div> :  
+      <> 
+      <Accordion />
+      <Footer />
+      </>   
+      }
 
     </div>
   )
