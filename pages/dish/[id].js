@@ -60,7 +60,7 @@ export default function Details() {
             <div className="text-yellow-400 font-bold text-lg md:text-2xl mx-5 text-center">
               {locale === "en"? data.dish : data.ar}
             </div>
-              <a className="text-gray-900 text-md lg:text-lg dark:text-white">{data.price} SAR</a>
+              <a className="text-gray-900 text-md lg:text-lg dark:text-white">{locale === "en"? `${data.price} SAR` : data.ar_pr}</a>
             <div className="inline-flex flex-row mb-10">
               <HiOutlineFire className="text-gray-500 w-7 h-5 dark:text-white" />
               <a className="text-gray-500 font-light dark:text-white">{data.cal} Calories</a>

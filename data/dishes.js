@@ -347,7 +347,7 @@ export const dishes = [
           ar: "شاي كوخ المبرد",
           image: "/images/peach-ice-tea.png",
           price: "15",
-          ar_pr: "١٥ لاير سعودي   ",
+          ar_pr: "١٥ لاير سعودي",
           // desc: "description",
           // new: 1,
           // spcl: 0,
@@ -356,11 +356,11 @@ export const dishes = [
         {
           dishId: "drink06",
           dish: "Soft Drinks",
-          ar: "",
+          ar: "المشروبات الغازية",
           image: "/images/Pepsi_Cup.png",
           price: "8",
 
-          ar_pr: "",          
+          ar_pr: "٨ لاير سعودي ",          
           // desc: "description",
           // new: 1,
           // spcl: 0,
