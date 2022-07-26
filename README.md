@@ -3,7 +3,7 @@
 <img src="https://github.com/nagarajpandith/le-waks-menu/blob/master/public/le-waks-logo.png?raw=true" alt="LOGO" border="0" width=200 height=200/>&nbsp;</a>
 </p>
 
-Menu web app built for Le Wak's | Burgers & More
+Menu web app built for a Saudi client - Le Wak's | Burgers & More
 
 ### Tech Stack
 1. Next js
@@ -54,15 +54,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - Menu
 
-![ss02](https://res.cloudinary.com/dpfpk49oa/image/upload/v1657203554/Screenshot_2022-07-07_at_7.46.14_PM_by0ypq.png)
+![ss02](https://res.cloudinary.com/dpfpk49oa/image/upload/v1658862161/Screenshot_2022-07-27_at_12.32.24_AM_ce12ny.png)
 
 - Light mode support
 
-![ss03](https://res.cloudinary.com/dpfpk49oa/image/upload/v1657203554/Screenshot_2022-07-07_at_7.46.25_PM_zh1zi6.png)
+![ss03](https://res.cloudinary.com/dpfpk49oa/image/upload/v1658862258/Screenshot_2022-07-27_at_12.34.05_AM_st7ftp.png)
 
 - Arabic version support
 
-![ss04](https://res.cloudinary.com/dpfpk49oa/image/upload/v1657203554/Screenshot_2022-07-07_at_7.47.05_PM_wsrdka.png)
+![ss04](https://res.cloudinary.com/dpfpk49oa/image/upload/v1658862307/Screenshot_2022-07-27_at_12.34.53_AM_w0cr5c.png)
 
 - Preloader Animations
 
