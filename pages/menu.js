@@ -23,8 +23,8 @@ export default function Menu() {
       </div>
 
       <div className="mt-4 flex flex-col justify-center items-center mx-[50%]">
-          <a className="text-yellow-400 text-2xl mb-2 truncate">{ locale==="en" ? "Le Wak's" : "عربية"}</a>
-          <a className="text-md text-gray-500 dark:text-white">{ locale==="en" ? "Menu" : "عربية"}</a>
+          <a className="text-yellow-400 text-2xl mb-2 truncate">{locale==="en" ? "Le Wak's" : "لى واكس"}</a>
+          <a className="text-md text-gray-500 dark:text-white">{locale==="en" ? "Menu" : "قائمة"}</a>
       </div>
 
       {/* <div className="inline-flex flex-col justify-center items-center mx-[50%]">
