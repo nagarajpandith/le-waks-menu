@@ -9,7 +9,7 @@ import { GiFrenchFries, GiChickenOven, GiSaucepan } from "react-icons/gi"
 import { FaHamburger } from "react-icons/fa"
 import { BiDrink } from "react-icons/bi"
 
-const AccordionUI = ({ title, dishes, ar, icon, Id }) => {
+const AccordionUI = ({ title, dishes, ar, Id }) => {
   const [ show, setShow ] = useState(false)
   const router = useRouter()
   const { locale } = router;
