@@ -204,7 +204,7 @@ export const dishes = [
         {
           dishId: "fried02",
           dish: "Fish and Chips",
-          image: "/images/6S4A3092.JPG",
+          image: "/images/6S4A3122.JPG",
           ar: "سمك وبطاطس",
           price: "32",
           ar_pr: "٣٢ لاير سعودي",
