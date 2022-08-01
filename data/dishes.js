@@ -68,7 +68,7 @@ export const dishes = [
         {
           dishId: "app06",
           dish: "Le Waks Truffle Fries",
-          ar: "لي واكس بطاطس طازج مع صلصه ترافل",
+          ar: " لي واكس بطاطس طازج مع صلصه ترافل",
           image: "/images/6S4A2980.JPG",
           price: "16",
           ar_pr: "س. ر ١٦ ",
@@ -80,7 +80,7 @@ export const dishes = [
         {
           dishId: "app07",
           dish: "Le Waks Signature Fries",
-          ar: "لي واكس بطاطس طازج مع صلصه ترافل",
+          ar: "لي واكس بطاطس خاص طازج مع لحم",
           image: "/images/6S4A3168.JPG",
           price: "21",
           ar_pr: "س. ر ٢١  ",
@@ -358,9 +358,9 @@ export const dishes = [
           dish: "Soft Drinks",
           ar: "المشروبات الغازية",
           image: "/images/Pepsi_Cup.png",
-          price: "8",
+          price: "5",
 
-          ar_pr: "س. ر ٨  ",          
+          ar_pr: "س. ر ٥  ",          
           // desc: "description",
           // new: 1,
           // spcl: 0,
