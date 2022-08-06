@@ -5,6 +5,8 @@ import { HiOutlineFire } from "react-icons/hi"
 import { motion } from "framer-motion"
 import { TailSpin } from "react-loader-spinner"
 import Footer from "../../components/footer"
+import { BiDrink } from "react-icons/bi"
+import ReadMoreReact from 'read-more-react';
 
 export default function Details() {
   const router = useRouter()
@@ -61,16 +63,33 @@ export default function Details() {
               {locale === "en"? data.dish : data.ar}
             </div>
               <a className="text-gray-900 text-md lg:text-lg dark:text-white">{locale === "en"? `${data.price} SAR` : data.ar_pr}</a>
-            <div className="inline-flex flex-row mb-10">
+            <div className="inline-flex flex-row">
               <HiOutlineFire className="text-gray-500 w-7 h-5 dark:text-white" />
               <a className="text-gray-500 font-light dark:text-white">{data.cal} Calories</a>
             </div>
+            {
+            detail.category==="Burgers"?
+            <div className="w-3/4 md:w-[30%] text-center">
+            <a className='text-gray-700 dark:text-white font-normal '>
+              {
+                locale === "en"?
+                data.ingredients.toString()
+                :
+                data.ar_ing
+              }
+              </a>
+            </div>
+            :
+            null
+            }
             {/* <div>
               <a className="text-gray-400">Description</a>
             </div> */}
             </div>
           </div>
-          <Footer />
+          <div className="mt-10">
+            <Footer />
+          </div>
         </>
       })
     )})
