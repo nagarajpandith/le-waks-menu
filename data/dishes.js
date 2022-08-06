@@ -107,7 +107,9 @@ export const dishes = [
           // desc: "description",
           // new: 0,
           // spcl: 1,
-          cal: 255
+          cal: 255,
+          ingredients: ["White Bun", " Spicy Mayo", " Mustard Mayo", " Lollo Biondo", " Pickled Cucumber", " Beef Patty"],
+          ar_ing: ["خبز  ابيض ", "مايونيز حار ", "خردل ", "خص اخضر ", "خيار مخلل ", "لحم بقري "]
         },
         {
           dishId: "burg02",
@@ -119,7 +121,9 @@ export const dishes = [
           // desc: "description",
           // new: 0,
           // spcl: 1,
-          cal: 819
+          cal: 819,
+          ingredients: ["Black Bun", " Truffle Mayo", " Spicy Mayo", " Lollo Biondo", " Mushroom Sauce", " Beef Patty Mix"],
+          ar_ing: ["خبز اسود ", "صوص ترافل ", "مايونيز حار ", "خص اخضر ", "صوص المشروم ", "لحم بقري "]
         },
         {
           dishId: "burg03",
@@ -131,7 +135,9 @@ export const dishes = [
           // desc: "description",
           // new: 0,
           // spcl: 1,
-          cal: 257
+          cal: 257,
+          ingredients: ["Black Bun", " Sweet Spicy Mayo", " Caramelized Onion", " Spicy Mayo", " Lollo Biondo", " Beef Patty Mix"],
+          ar_ing: ["خبز اسود ", "صوص مايونيزحلو ", "بصل مكرمل ", "مايونيز حار ", "خص اخضر ", "لحم بقري "]
         },
         {
           dishId: "burg04",
@@ -143,7 +149,9 @@ export const dishes = [
           // desc: "description",
           // new: 0,
           // spcl: 1,
-          cal: 425
+          cal: 425,
+          ingredients: ["White Bun", " Spice Mayo", " Mustard Mayo", " Pickled Cucumber", " Pickled Jalapeno", " Lollo Biondo"],
+          ar_ing: ["خبز ابيض ", "مايونيز حار ", "خردل ", "خيار مخلل ", "هليبينو ", "خص اخضر "]
         },
         {
           dishId: "burg05",
@@ -155,7 +163,9 @@ export const dishes = [
           // desc: "description",
           // new: 0,
           // spcl: 1,
-          cal: 485
+          cal: 485,
+          ingredients: ["White Bun", " Spicy Mayo", " Mustard Mayo", " Pickled Cucumber", " Lollo Biondo"],
+          ar_ing: ["خبزابيض ", "مايونيز حار ", "خردل ", "خيار مخلل ", "خص اخر "]
         },
         {
           dishId: "burg06",
@@ -167,7 +177,9 @@ export const dishes = [
           // desc: "description",
           // new: 0,
           // spcl: 1,
-          cal: 414
+          cal: 414,
+          ingredients: ["Red and White Bun", " Spicy Mayo", " Mustard Mayo", " Ketchup", " Lollo Biondo", " Pickled Cucumber"],
+          ar_ing: ["خبز احمر وابيض ", "ماينوز حار ", "خردل ", "كاتشب ", "خص اخضر ", "خيار مخلل "]
         },
         {
           dishId: "burg07",
@@ -179,7 +191,9 @@ export const dishes = [
           // desc: "description",
           // new: 0,
           // spcl: 1,
-          cal: 315
+          cal: 315,
+          ingredients: ["Red and White Burger", " Spicy Mayo", " Musrad Mayo", " Ketchup", " Lollo Biondo", " Pickled Cucumber", " Pickled Jalapeno"],
+          ar_ing: ["خبز احمر وابيض ", "ماينوز حار ", "خردل ", "كاتشب ", "خص اخضر ", "خيار مخلل ", "هليبينو "]
         },
       ]
     },

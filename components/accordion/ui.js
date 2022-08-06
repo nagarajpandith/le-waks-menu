@@ -63,6 +63,12 @@ const AccordionUI = ({ title, dishes, ar, Id }) => {
           </Link>
           {/* <a className='text-gray-500 font-light'>{dish.desc}</a> */}
           <a className='text-yellow-400 dark:text-yellow-300 text-sm md:text-lg'>{locale === "en"? `${dish.price} SAR`  : dish.ar_pr}</a>
+          <a className='text-gray-700 dark:text-white text-sm md:text-md font-light'>
+            {locale === "en"?
+            "Ingredients: " + dish.ingredients
+            :
+            "المكونات: " + dish.ar_ing}
+          </a>
           <div className='inline-flex flex-row'>
           <a className='text-gray-400 font-light text-xs dark:text-white md:text-lg'>{dish.cal} Calories</a>
           <HiOutlineFire className="text-gray-500 w-7 h-4 md:h-5 dark:text-white text-sm md:text-lg md:mt-1" />
