@@ -8,6 +8,7 @@ import { useRouter } from "next/router"
 import { GiFrenchFries, GiChickenOven, GiSaucepan } from "react-icons/gi"
 import { FaHamburger } from "react-icons/fa"
 import { BiDrink } from "react-icons/bi"
+import ReadMoreReact from 'read-more-react';
 
 const AccordionUI = ({ title, dishes, ar, Id }) => {
   const [ show, setShow ] = useState(false)
@@ -63,12 +64,23 @@ const AccordionUI = ({ title, dishes, ar, Id }) => {
           </Link>
           {/* <a className='text-gray-500 font-light'>{dish.desc}</a> */}
           <a className='text-yellow-400 dark:text-yellow-300 text-sm md:text-lg'>{locale === "en"? `${dish.price} SAR`  : dish.ar_pr}</a>
-          <a className='text-gray-700 dark:text-white text-sm md:text-md font-light'>
-            {locale === "en"?
-            "Ingredients: " + dish.ingredients
+          {title==="Burgers"?
+          <a className='text-gray-700 dark:text-white text-xs md:text-md font-normal'>
+          <ReadMoreReact 
+          min={30}
+          ideal={35}
+          max={40}
+          readMoreText={<a className='cursor-pointer text-bold text-yellow-400 dark:text-yellow-300'>Read More</a>}
+          text={
+            locale === "en"?
+            dish.ingredients.toString()
             :
-            "المكونات: " + dish.ar_ing}
+            dish.ar_ing.toString()
+          } />
           </a>
+          :
+          null
+          }
           <div className='inline-flex flex-row'>
           <a className='text-gray-400 font-light text-xs dark:text-white md:text-lg'>{dish.cal} Calories</a>
           <HiOutlineFire className="text-gray-500 w-7 h-4 md:h-5 dark:text-white text-sm md:text-lg md:mt-1" />

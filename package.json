@@ -17,7 +17,8 @@
     "react-dom": "18.2.0",
     "react-hooks-global-state": "^2.0.0-rc.0",
     "react-icons": "^4.4.0",
-    "react-loader-spinner": "^5.1.5"
+    "react-loader-spinner": "^5.1.5",
+    "read-more-react": "^1.0.10"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
