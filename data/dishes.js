@@ -20,7 +20,7 @@ export const dishes = [
         {
           dishId: "app02",
           dish: "Le Waks Chicken Wing (5pcs)",
-          ar: "لى واكس جناحي الدجاج ( ٥ حبات )",
+          ar: "لي واكس اجنحه دجاج ( ٥ حبات )",
           image: "/images/6S4A3025.JPG",
           price: "16",
           ar_pr: "س. ر ١٦",
@@ -32,7 +32,7 @@ export const dishes = [
         {
           dishId: "app03",
           dish: "Le Waks Popcorn Chicken W/Dynamite Sauce",
-          ar: "لى واكس دجاج الفشار صلصة ديناميتس ",
+          ar: "لي واكس قطع دجاج مع صلصه دينامتس",
           image: "/images/6S4A2956.JPG",
           price: "14",
           ar_pr: "س. ر ١٤",
@@ -44,7 +44,7 @@ export const dishes = [
         {
           dishId: "app04",
           dish: "Le Waks Popcorn Shrimp W/Sweet Spicy Mayo",
-          ar: "لى واكس روبيان الفشار صلصة الحلو ",
+          ar: "لي واكس قطع روبيان مع صلصه",
           image: "/images/6S4A2958.JPG",
           price: "18",
           ar_pr: "س. ر ١٨",
@@ -358,7 +358,7 @@ export const dishes = [
         {
           dishId: "drink05",
           dish: "Peach Ice Tea",
-          ar: "شاي كوخ المبرد",
+          ar: "موهيتو شاي مثلج",
           image: "/images/peach-ice-tea.png",
           price: "13",
           ar_pr: "س. ر ١٣",
