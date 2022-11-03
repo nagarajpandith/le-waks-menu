@@ -13,6 +13,7 @@
     "framer-motion": "^6.3.16",
     "next": "12.2.0",
     "next-themes": "^0.2.0",
+    "nextjs-progressbar": "^0.0.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hooks-global-state": "^2.0.0-rc.0",

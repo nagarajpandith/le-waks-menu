@@ -23,14 +23,14 @@ export default function Navbar() {
   };
   return (
     <div>
-      <div className="flex justify-between px-12 py-4">
+      <div className="flex justify-between p-5 items-center">
         <button
           onClick={() => router.back()}
           className="inline-flex items-center px-4 py-4 bg-gray-50 hover:bg-gray-100 text-white text-sm font-medium rounded-md shadow-lg dark:bg-yellow-300"
         >
           <IoIosArrowBack className="text-gray-900" />
         </button>
-        <div className="text-gray-700 dark:text-yellow-300 text-2xl cursor-pointer mt-2 ml-[60%] md:ml-0">
+        <div className="text-gray-700 dark:text-yellow-300 text-2xl cursor-pointer">
           {renderTheme()}
         </div>
         {/*
