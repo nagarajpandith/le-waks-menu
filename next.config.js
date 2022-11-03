@@ -5,9 +5,9 @@ const nextConfig = {
     defaultLocale: 'en',
   },
   reactStrictMode: true,
-  images:{
-    domains: ['unsplash.it']
-  }
-}
+  images: {
+    domains: ['unsplash.it'],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

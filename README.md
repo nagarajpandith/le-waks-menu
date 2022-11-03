@@ -6,11 +6,13 @@
 Menu web app built for a Saudi client - Le Wak's | Burgers & More
 
 ### Tech Stack
+
 1. Next js
 2. Tailwind-CSS
 3. Framer Motion
 
 ### Features
+
 - Responsive & modern UI
 - Dynamic data with internal API
 - Dual language support (i18n)
@@ -18,14 +20,15 @@ Menu web app built for a Saudi client - Le Wak's | Burgers & More
 - Seamless preloaders & minimalistic animations
 
 ### Installation steps
+
 1. - Fork the [repo](https://github.com/nagarajpandith/le-waks-menu)
    - Clone the repo to your local system
-    ```git
-    git clone https://github.com/nagarajpandith/le-waks-menu.git
-    cd le-waks-menu
-    ```
-    
+   ```git
+   git clone https://github.com/nagarajpandith/le-waks-menu.git
+   cd le-waks-menu
+   ```
 2. Install latest version of [Nodejs](https://nodejs.org/en/) and install all the dependencies:
+
 ```bash
 npm install
 ```
@@ -35,9 +38,11 @@ npm install
 ```bash
 npm run dev
 ```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the webpage.
 
 ### Libraries and dependencies
+
     "@headlessui/react": "^1.6.5",
     "framer-motion": "^6.3.16",
     "next": "12.2.0",
@@ -46,8 +51,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-loader-spinner": "^5.1.5"
-    
+
 ### Screenshots
+
 - Home Page
 
 ![ss01](https://res.cloudinary.com/dpfpk49oa/image/upload/v1657203553/Screenshot_2022-07-07_at_7.45.50_PM_crwkqc.png)

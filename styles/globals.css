@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    @apply transition-colors duration-[900];
+* {
+  @apply transition-colors duration-[900];
 }
 
 input:checked + p {
@@ -20,5 +20,9 @@ input:focus ~ label {
   outline: -webkit-focus-ring-color auto 5px;
 }
 
-.read-more { display: none; }
-p:truncated + .read-more { display: block; }
+.read-more {
+  display: none;
+}
+p:truncated + .read-more {
+  display: block;
+}
